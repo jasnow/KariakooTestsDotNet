@@ -1,0 +1,106 @@
+######################################################################
+      - commodity: [ 
+# FYI: Found 8 commodities in GUI on 6/8/2012.
+# AL: Add the rest of the GOOD commodity choices <<<<<<<<<<<<<<<<<<<<<
+# GOOD
+Potatoes(Viazi),
+Tomatoes(Nyanya),
+Potatoes(Viazi),
+Spinach(Spinachi),
+Maize(mahindi),
+Cassava(Muhogo),
+Sweet potato(Viazi Vitamu),
+Beans(Maharage)
+# BAD
+# Removed "UNKNOWN" because it is impossible to pick non-menu items.
+]
+######################################################################
+     - dateValue: [ 
+# GOOD
+02/02/2012, 
+# BAD DATE:  YEAR (YY instead of YYYY)
+02/02/12, 
+# BAD DATE: MISSING YEAR
+02/02,
+# BAD DATE: YEAR FIRST
+2012/02/02, 
+# BAD DATE: 2/30 (never 30th of Feb)
+02/30/2012,
+# BAD DATE: 4/31 (never 31th of Apr)
+04/31/2012,
+# BAD DATE: 6/31 (never 31th of Jun)
+06/31/2012,
+# BAD DATE: 9/31 (never 31th of Sep)
+09/31/2012,
+# BAD DATE: 11/31 (never 31th of Nov)
+11/31/2012,
+# BAD DATE: 2/29/2011 (never 29th of Feb on non-leap year)
+02/29/2011,
+# BAD DATE: ALPHA
+ALPHA,
+# BAD DATE: EMPTY
+#,
+# BAD DATE: BLANK
+#' ',
+# BAD DATE: SPECIAL-CHARS
+02&02&2012
+]
+######################################################################
+     - quality: [
+# GOOD
+Grade 1,
+Grade 2,
+Grade 3
+# Remove "BadValue" because it is impossible to pick non-menu items.
+]
+######################################################################
+     - region: [
+# FYI: Found 4 regions in GUI on 6/8/2012.
+# AL: Add the rest of the GOOD region choices <<<<<<<<<<<<<<<<<<<<<
+Dar-es -Salaam,
+Mbeya,
+Iringa,
+Dodoma
+# Remove "BadValue" because it is impossible to pick non-menu items.
+]
+######################################################################
+     - district: [
+# FYI: Found 4 regions in GUI on 6/8/2012.
+# AL: Add the rest of the GOOD district choices <<<<<<<<<<<<<<<<<<<<<
+Skonge,
+Mwadui,
+Nzega,
+Kilosa
+# Remove "BadValue" because it is impossible to pick non-menu items.
+]
+######################################################################
+     - ward: [
+# FYI: Found 4 wards in GUI on 6/8/2012.
+# AL: Add the rest of the GOOD ward choices <<<<<<<<<<<<<<<<<<<<<<<<<<
+Mpwapwa,
+Kongwa,
+chalinze,
+ubena
+# Remove "BadValue" because it is impossible to pick non-menu items.
+]
+######################################################################
+     - amount: [
+# GOOD
+1,
+# BAD: ZERO
+0,
+# BAD: NEG
+-10,
+# PERIOD
+10.1,
+# EMPTY
+#,
+# BLANK
+#' ',
+# ALPHA
+ALPHA,
+# BAD: TOO LARGE (31 chars)
+9999999999999999999999999999999
+]
+######################################################################
+
