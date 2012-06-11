@@ -4,8 +4,12 @@ Given /^that I am on home page$/ do
   visit '/'
 end
 
-Given /^I can get to the (.*) entry page$/ do |word|
+Given /^I can get to the ([^ ]*) entry page$/ do |word|
   visit "/#{word}.php"
+end
+
+Given /^I can get to the ([^ ]*) ([^ ]*) page$/ do |top, action|
+  visit "/#{top}/#{action}"
 end
 
 ## WHEN ##################################################
@@ -64,6 +68,14 @@ end
 
 When /^I enter the amount received (.*)$/ do |amount|
   fill_in "amount", :with => amount
+end
+
+When /^I enter the "(.*?)" as "(.*?)"$/ do |variable, value|
+  fill_in variable, :with => value
+end
+
+When /^I push "(.*?)" button$/ do |button|
+  find_button(button).click
 end
 
 ## THEN ##################################################
