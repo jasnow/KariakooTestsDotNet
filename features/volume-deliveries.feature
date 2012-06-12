@@ -13,6 +13,7 @@ Feature: Volume Information
     2. Add Swathi version of commodity.<br>
     3. Add region/district/ward to market column.<br>
     4. INTERNAL: Add blanks between variable in When lines.<br>
+    5. INTERNAL: How to delete the input after the test?
 
   Scenario Outline:
     Given that I am on home page
@@ -25,7 +26,7 @@ Feature: Volume Information
     And I enter the "UnitQuantity" as "<volume>"
     And I select the "QualityName" as "<quality>"
     And I push "Create" button
-    Then the response page should include "recorded"
+    Then the submitted page should contain "recorded"
 
     #And I enter the date <dateValue>
 

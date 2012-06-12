@@ -84,6 +84,6 @@ Then /^the response should succesfully$/ do
    page.should_not have_content "ERROR"
 end
 
-Then /^the response page should include "(.*?)"$/ do |response|
+Then /^the submitted page should contain "(.*?)"$/ do |response|
    page.should have_content "Missing Submitted Page"
 end
