@@ -1,4 +1,4 @@
-if [ "X$X" = "XX" ] ; then
+if [ "X$1X" = "XX" ] ; then
     COMMITSTR="Added <p> to TODOs list"
 else
     COMMITSTR="$1"

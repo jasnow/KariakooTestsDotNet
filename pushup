@@ -1,5 +1,5 @@
 if [ "X$1X" = "XX" ] ; then
-    COMMITSTR="Added <p> to TODOs list"
+    COMMITSTR="Changed <p> to <br> in TODOs list"
 else
     COMMITSTR="$1"
 fi
