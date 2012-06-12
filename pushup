@@ -1,5 +1,5 @@
 if [ "X$1X" = "XX" ] ; then
-    COMMITSTR="Changed <p> to <br> in TODOs list"
+    COMMITSTR="Added 1 more <br> in story description"
 else
     COMMITSTR="$1"
 fi
