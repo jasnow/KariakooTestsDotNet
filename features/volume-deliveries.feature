@@ -8,7 +8,7 @@ Feature: Volume Information
     2. Add Swathi version of commodity<br>
     3. Add region/district/ward to market column.<br>
     4. INTERNAL: Add blanks between variable in When lines.<br>
-    5. Add error cases to unitWeight and volume. (Separate Story)<br>
+    5. Add error cases (validation) to unitWeight and volume. (Separate Story)<br>
 
   Scenario Outline:
     Given that I am on home page
