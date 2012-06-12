@@ -3,12 +3,12 @@ Feature: Volume Information
   As a market clerk
   I want to enter the volume when a delivery arrives.
 
-  TODOS:
-    1. Add date. (yes, see task for that)
-    2. Add Swathi version of commodity
-    3. Add region/district/ward to market column.
-    4. INTERNAL: Add blanks between variable in When lines.
-    5. Add error cases to unitWeight and volume. (Separate Story)
+  TODOS:<p>
+    1. Add date. (yes, see task for that)<p>
+    2. Add Swathi version of commodity<p>
+    3. Add region/district/ward to market column.<p>
+    4. INTERNAL: Add blanks between variable in When lines.<p>
+    5. Add error cases to unitWeight and volume. (Separate Story)<p>
 
   Scenario Outline:
     Given that I am on home page

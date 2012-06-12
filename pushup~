@@ -1,0 +1,9 @@
+if [ "X$X" = "XX" ] ; then
+    COMMITSTR="Added <p> to TODOs list"
+else
+    COMMITSTR="$1"
+fi
+git add .
+git commit -m "${COMMITSTR}"
+git push
+relish push jasnow/KariakooTestsDotNet
