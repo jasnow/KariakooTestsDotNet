@@ -18,7 +18,7 @@ How to run the tests:
 
  2. Run **bundle install**.
 
- 4. Run **cucumber**. Currently I have 1 feature file and it runs green.
+ 3. Run **cucumber**. Currently I have 1 feature file and it runs green.
 
 How to learn more about http://Relishapp.com
 ====================
@@ -27,11 +27,9 @@ How to learn more about http://Relishapp.com
 
  2. What I did to set up project on Relishapp:
 
-  * Ran "relish projects:add jasnow/KariakooTestsDotNet"
-
-  * Ran "relish push jasnow/KariakooTestsDotNet"
-
-  * Ran "open https://www.relishapp.com/jasnow/KariakooTestsDotNet/docs"
+  * Ran "relish projects:add jasnow/KariakooTestsDotNet".
+  * Ran "relish push jasnow/KariakooTestsDotNet".
+  * Ran "open https://www.relishapp.com/jasnow/KariakooTestsDotNet/docs".
 
 How to add more tests
 ====================
