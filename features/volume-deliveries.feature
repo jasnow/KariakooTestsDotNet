@@ -15,6 +15,7 @@ Feature: Volume Information
     4. INTERNAL: Add blanks between variable in When lines.<br>
     5. INTERNAL: How to delete the input after the test?
 
+  @mechanize
   Scenario Outline:
     Given that I am on home page
     And I can get to the deliveries create page
