@@ -12,20 +12,19 @@ Feature: Volume Information
     1. Add date. (yes, I see the task for that.)<br>
     2. Add Swathi version of commodity.<br>
     3. Add region/district/ward to market column.<br>
-    4. INTERNAL: Add blanks between variable in When lines.<br>
-    5. INTERNAL: How to delete the input after the test?
+    4. INTERNAL: How to delete the input after the test?
 
   @mechanize
   Scenario Outline:
     Given that I am on home page
     And I can get to the deliveries create page
 
-    When I select the "MarketId" as "<market>"
+    When I select the "Market Id" as "<market>"
     # NOTE: Market includes "region", "district", and "ward".
-    And I select the "CommodityId" as "<commodity>"
-    And I enter the "UnitWeight" as "<unitWeight>"
-    And I enter the "UnitQuantity" as "<volume>"
-    And I select the "QualityName" as "<quality>"
+    And I select the "Commodity Id" as "<commodity>"
+    And I enter the "Unit Weight" as "<unitWeight>"
+    And I enter the "Unit Quantity" as "<volume>"
+    And I select the "Quality Name" as "<quality>"
     And I push "Create" button
     Then the submitted page should contain "recorded"
 

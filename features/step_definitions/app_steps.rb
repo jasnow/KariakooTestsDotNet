@@ -58,10 +58,6 @@ When /^I push "Submit" button$/ do
   find_button('Submit').click
 end
 
-When /^I select the "(.*?)" as "(.*?)"$/ do |id, value|
-  page.select value, :from => id
-end
-
 When /^I enter the quality "([^"]*)"$/ do |quality|
   page.select quality, :from => "quality"
 end
@@ -70,8 +66,14 @@ When /^I enter the amount received (.*)$/ do |amount|
   fill_in "amount", :with => amount
 end
 
+When /^I select the "(.*?)" as "(.*?)"$/ do |variable, value|
+  oneword = variable.gsub(" ","")
+  page.select value, :from => oneword
+end
+
 When /^I enter the "(.*?)" as "(.*?)"$/ do |variable, value|
-  fill_in variable, :with => value
+  oneword = variable.gsub(/\s+/,"")
+  fill_in oneword, :with => value
 end
 
 When /^I push "(.*?)" button$/ do |button|
